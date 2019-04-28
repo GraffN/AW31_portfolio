@@ -1,0 +1,38 @@
+.cards{
+
+  margin-top:20px;
+  &--container{
+    border:2px solid $blue;
+  }
+  &--text{
+
+  }
+}
+img.img-responsive{
+  padding-left: none;
+  padding-right: -15px;
+}
+.card-body{
+  margin:10px;
+}
+.btn{
+  &-primary{
+    color: $white;
+    background-color: $blue;
+    border-color: $blue;
+
+    &__center{
+      margin:0 auto;
+      display: block;
+      width: 100px;
+    }
+  }
+}
+.hover{
+  &__green:hover{
+    color: $black;
+    background-color: $green;
+  }
+}
+
+

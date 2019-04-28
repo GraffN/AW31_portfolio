@@ -1,0 +1,12 @@
+@function get-value($n) {
+  @return $n / ($n * 0 + 1);
+}
+$base: 62.5%;
+@mixin font-size($font-size) {
+  $base-size: get-value($base / 100);
+  $base-px-size: 16 * $base-size;
+
+  font-size: $font-size;
+  font-size: (get-value($font-size) / $base-px-size) + rem;
+}
+/* from JoeCianflone.co by Joe Cianfloe at https://joecianflone.co/article/sass-px-to-rems */
