@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+  display: block;
+}
+
+.card {
+  color: white;
+  background-color: #52ce90;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+.card:nth-child(odd) {
+  color: black;
+  background-color: lightgray;
+}
+.card--header {
+  padding-top: 50px;
+}
+.card--header__text {
+  width: 90%;
+  font-size: 18px;
+  padding-bottom: 40px;
+  border-bottom: 5px solid lightskyblue;
+  margin: 0 auto;
+}
+.card--name {
+  padding-top: 30px;
+  font-size: 20px;
+}
+.card--timer {
+  padding-top: 10px;
+}
+.card--button {
+  color: white;
+  background-color: #52ce90;
+  margin-top: 25px;
+  width: 200px;
+  height: 50px;
+  border: 3px solid;
+}
+
+.card:nth-child(odd) .card--button {
+  color: black;
+  background-color: lightgray;
+}
+
+/*# sourceMappingURL=style.css.map */

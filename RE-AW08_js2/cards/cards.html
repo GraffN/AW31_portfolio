@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MA_JS2</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,400,500,600|Source+Code+Pro:300,400,500,600" rel="stylesheet">
+    <title>Cards</title>
+</head>
+<body>
+    <div class="card" id="card-list">
+        <div v-for="cards in cardList"
+                v-bind:class="cards.oddOrEven">
+            <div class="card--header">
+                <h1 class="card--header__text">This is a test card for Noroff, it is number {{cards.number}} </h1>
+
+            </div>
+            <div class="card--name">
+                <p>
+                    {{cards.name}}
+                </p>
+            </div>
+            <div class="card--timer">
+                <p>
+                    {{new Date().getUTCDate()}}/
+                    {{new Date().getUTCMonth()}}/
+                    {{new Date().getFullYear()}}
+                    <br>
+                    {{new Date().getHours()}}:
+                    {{new Date().getMinutes()}}:
+                    {{new Date().getSeconds()}}:
+                    O'clock
+                </p>
+            </div>
+            <button class="card--button">View on site</button>
+        </div>
+
+
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
