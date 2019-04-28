@@ -9,17 +9,20 @@
 .even{
   background-color: #52ce90;
 }
+.align{
+  text-align: center;
+}
 .card{
-    color:white;
+  display: inline-block;
     width: 400px;
     height: 300px;
     text-align: center;
-    margin-top: 20px;
+    margin: 20px;
     border-radius: 3px;
+
     &--header{
         padding-top:40px;
         &__text{
-            width: 90%;
             font-size: 18px;
             padding-bottom: 40px;
             border-bottom: 5px solid lightskyblue;
@@ -35,9 +38,7 @@
         padding-top:10px;
     }
      &--button{
-        color:white;
-
-
+        color:black;
         margin-top: 25px;
         width: 200px;
         height: 50px;
@@ -46,10 +47,7 @@
     
 }
 // same as the preveous nth-child BUT insted of odd. this one gives every even card the style writen inside it.
-.card:nth-child(odd) .card--button{
-    color:black;
-    background-color: lightgray;
-}
+
     
 
 

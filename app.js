@@ -9,7 +9,7 @@ const media = [
         title: 'Projects',
         description: "Take a look at my latest projects",
         showDetail: false,
-        link: "RE-AW08_js2/Projects.html"
+        link: "html/Projects.html"
     },
     {
         title: 'About and contact',

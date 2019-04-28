@@ -23,9 +23,12 @@
             <h2>{{recreated.title}}</h2>
             <p>{{recreated.description}}</p>
 
-            <p v-show="recreated.showDetail">View more</p>
-            <button v-show="recreated.showDetail">
-                <a v-bind:href="recreated.link">Click for more</a>
+            <p>View more</p>
+            <p v-show="recreated.showDetail">{{recreated.task}}</p>
+            <button class="nav--button"
+                    v-show="recreated.showDetail">
+
+                <a v-bind:href="recreated.link">Click to view</a>
             </button>
         </div>
 
@@ -39,7 +42,7 @@
  </div>-->
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="RE-AW08.js"></script>
+<script src="../script/RE-AW08.js"></script>
 
 </body>
 </html>

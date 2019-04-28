@@ -1,0 +1,13 @@
+.container{
+  height: 800px;
+  display: inline-flex;
+  background: purple;
+}
+.about{
+
+  &--image{
+    &__size{
+      width: 400px;
+    }
+  }
+}
