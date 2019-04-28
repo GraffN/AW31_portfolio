@@ -1,7 +1,7 @@
-.header--text {
+.nav--button, .header--text {
   font-family: Montserrat, sans-serif;
   font-size: 50px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .navigation {
@@ -39,7 +39,6 @@ body {
   width: 80%;
 }
 .navigation--text {
-  height: 300px;
   display: block;
   text-align: center;
   background-color: #633755;
@@ -57,6 +56,12 @@ body {
   height: 200px;
   width: 500px;
   background-color: #0d1355;
+}
+
+.nav--button {
+  width: 80%;
+  height: 100px;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

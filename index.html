@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale =1.0">
@@ -11,8 +11,9 @@
 
 </head>
 <body>
-    <div class="[ header ]">
+    <div class="[ header ][ nav-list ]">
         <div class="[ header--text ]">
+
             <H1>Welcome</H1>
         </div>
         <div class="[ navigation ][ media-list ]">
@@ -22,12 +23,11 @@
 
                 <h2>{{media.title}}</h2>
                 <p>{{media.description}}</p>
-                <p v-show="media.showDetail">View more</p>
-                <span v-show="media.showDetail">
-                    <div>
-                        <a href="RE-AW08_js2/Projects.html">click me</a>
-                    </div>
-            </span>
+                <p>View more</p>
+                <button class="nav--button"
+                        v-show="media.showDetail">
+                    <a v-bind:href="media.link">Click for more</a>
+                </button>
             </div>
 
         </div>

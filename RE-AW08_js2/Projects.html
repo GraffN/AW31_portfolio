@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale =1.0">
@@ -24,11 +24,9 @@
             <p>{{recreated.description}}</p>
 
             <p v-show="recreated.showDetail">View more</p>
-            <span v-show="recreated.showDetail">
-                    <div>
-                        <a v-bind:href="recreated.link">Click me</a>
-                    </div>
-            </span>
+            <button v-show="recreated.showDetail">
+                <a v-bind:href="recreated.link">Click for more</a>
+            </button>
         </div>
 
     </div>
